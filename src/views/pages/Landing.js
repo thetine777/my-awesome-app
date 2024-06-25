@@ -131,7 +131,7 @@ class Landing extends React.Component {
                     </h6 >
                   </NavLink>
                 </Col>
-                <Col lg="12">
+                <Col lg="12 mb-5">
                   <img
                     style={{
                       width: '100%',
