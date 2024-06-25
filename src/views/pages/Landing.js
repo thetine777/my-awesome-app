@@ -62,9 +62,9 @@ class Landing extends React.Component {
                     href="https://maps.app.goo.gl/qtWDY2jPEcHFi4Uu8"
                   // target="_blank"
                   >
-                    <h2 className="mb-0 font-weight-bold text">
+                    <h4 className="mb-0 font-weight-bold text">
                       เราเป็นตัวแทนจำหน่ายรถยนต์ เกีย จังหวัดเชียงใหม่
-                    </h2 >
+                    </h4 >
                   </NavLink>
                 </Col>
               </Row>
