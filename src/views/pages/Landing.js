@@ -34,6 +34,8 @@ import CarouselUI from "components/CarouselUI/CarouselUI.js";
 
 import { NavLink } from "react-router-dom";
 
+import './Landing-style.scss'
+
 class Landing extends React.Component {
   state = {};
   componentDidMount() {
@@ -52,15 +54,31 @@ class Landing extends React.Component {
               <CarouselUI />
             </div>
           </div>
+          <section>
+            <Container>
+              <Row className="row-grid align-items-center">
+                <Col lg="12" className="mt-5 text-center">
+                  <NavLink
+                    href="https://maps.app.goo.gl/qtWDY2jPEcHFi4Uu8"
+                  // target="_blank"
+                  >
+                    <h2 className="mb-0 font-weight-bold text">
+                      เราเป็นตัวแทนจำหน่ายรถยนต์ เกีย จังหวัดเชียงใหม่
+                    </h2 >
+                  </NavLink>
+                </Col>
+              </Row>
+            </Container>
+          </section>
           <section className="mt-5">
             <img style={{ width: '100%', height: 'auto' }} src={require("assets/img/theme/car-white.jpg")} alt="" />
           </section>
-
           <section>
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="text-center btn-wrapper mb-3" lg="12">
                   <Button
+                    size="lg"
                     className="btn-icon-only rounded-circle"
                     color="default"
                     href="tel:0889419926"
@@ -75,6 +93,7 @@ class Landing extends React.Component {
                     0889419926
                   </UncontrolledTooltip>
                   <Button
+                    size="lg"
                     className="btn-icon-only rounded-circle ml-1"
                     color="default"
                     href="https://www.facebook.com/profile.php?id=100083399348273&mibextid=LQQJ4d"
@@ -89,6 +108,7 @@ class Landing extends React.Component {
                     Like us
                   </UncontrolledTooltip>
                   <Button
+                    size="lg"
                     className="btn-icon-only rounded-circle ml-1"
                     color="default"
                     id="tooltip837440415"
@@ -101,25 +121,17 @@ class Landing extends React.Component {
                     email
                   </UncontrolledTooltip>
                 </Col>
-                <Col lg="12" className="justify-content-center mb-5">
+                <Col lg="12" className="mb-5 text-center">
                   <NavLink
                     href="https://maps.app.goo.gl/qtWDY2jPEcHFi4Uu8"
                   // target="_blank"
                   >
-                    <h4 className="mb-0 font-weight-light">
+                    <h6 className="mb-0 font-weight-light text">
                       <i className="ni ni-pin-3"></i>  239 หมู่7 ถ.เชียงใหม่-ฮอด ต.สุเทพ อ.เมืองเชียงใหม่, Chiang Mai, Thailand, Chiang Mai
-                    </h4>
+                    </h6 >
                   </NavLink>
-
                 </Col>
-
-              </Row>
-            </Container>
-          </section>
-          <section className="mt-5 mb-5">
-            <Container>
-              <Row>
-                <Col className="lg-12">
+                <Col lg="12">
                   <img
                     style={{
                       width: '100%',

@@ -1,0 +1,11 @@
+.banner {
+    height: auto;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner {
+        height: 350px;
+        width: auto;
+    }
+}

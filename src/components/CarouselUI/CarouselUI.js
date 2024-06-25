@@ -6,7 +6,7 @@ import {
   CarouselIndicators,
   CarouselCaption,
 } from 'reactstrap';
-import { isMobile } from 'react-device-detect';
+import './CarouselUI-style.scss';
 
 const items = [
   {
@@ -47,13 +47,6 @@ function CarouselUI(args) {
     setActiveIndex(newIndex);
   };
 
-
-  const styleMobile = {
-    height: 350, width: 'auto'
-  }
-  const styleDesktop = {
-    height: 'auto', width: '100%'
-  }
   const slides = items.map((item) => {
 
     return (
@@ -62,7 +55,7 @@ function CarouselUI(args) {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img style={isMobile ? { ...styleMobile } : { ...styleDesktop }} src={item.src} alt={item.altText} />
+        <img className='banner'  src={item.src} alt={item.altText} />
         <CarouselCaption
           captionText={item.caption}
           captionHeader={item.caption}
